@@ -143,6 +143,7 @@ promoRouter.route('/:promoId/comments')
     .catch((err) => next(err));    
 });
 
+/*
 promoRouter.route('/:promoId')
 .get((req,res,next) => {
     Promotions.findById(req.params.promoId)
@@ -212,6 +213,7 @@ promoRouter.route('/:promoId')
     }, (err) => next(err))
     .catch((err) => next(err));    
 });
+*/
 
 promoRouter.route('/:promoId/comments/:commentId')
 .get((req,res,next) => {

@@ -143,6 +143,7 @@ leaderRouter.route('/:leaderId/comments')
     .catch((err) => next(err));    
 });
 
+/*
 leaderRouter.route('/:leaderId')
 .get((req,res,next) => {
     Leaders.findById(req.params.leaderId)
@@ -212,6 +213,7 @@ leaderRouter.route('/:leaderId')
     }, (err) => next(err))
     .catch((err) => next(err));    
 });
+*/
 
 leaderRouter.route('/:leaderId/comments/:commentId')
 .get((req,res,next) => {
